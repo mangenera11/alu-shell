@@ -1,1 +1,1 @@
-Shell basics
+# basics and Shell basics scripts.,
