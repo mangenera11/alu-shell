@@ -1,0 +1,6 @@
+#!/bin/bash
+w_dec=$((5#$(echo "$WATER" | tr 'water' '01234')))
+s_dec=$((5#$(echo "$STIR" | tr 'stir.' '01234')))
+sum=$((w_dec + s_dec))
+oct=$(echo "obase=8; $sum" | bc)
+echo "$oct" | tr '01234567' 'bestchol'
