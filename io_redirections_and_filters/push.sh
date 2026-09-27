@@ -1,0 +1,7 @@
+#!/bin/bash
+
+chmod u+x "$1"
+
+git add .
+git commit -m "New task"
+git push
